@@ -1,0 +1,45 @@
+body.landing {
+  height: 100vh;
+  background-color: rgb(246, 246, 246);
+  -webkit-transition: background-color 1s; /* For Safari 3.1 to 6.0 */
+  transition: background-color 1s;
+}
+
+body.landing.verification {
+  background-color: rgb(243, 226, 178);
+  -webkit-transition: background-color 1s; /* For Safari 3.1 to 6.0 */
+  transition: background-color 1s;
+}
+
+body.confirmation {
+  background-color: rgb(134, 221, 161);
+  -webkit-transition: background-color 1s; /* For Safari 3.1 to 6.0 */
+  transition: background-color 1s;
+}
+
+#signup-form {
+  padding: 30px 60px;
+  background-color: #fff;
+  margin-top: 10vh;
+  border-radius: 10px;
+
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+#signup-form label {
+  color: dimgray;
+
+  font-weight: bold;
+}
+
+#signup-form h1 {
+  font-weight: 900;
+  margin-bottom: 30px;
+  color: dimgray;
+}
+
+#signup-form button {
+  margin-right: 20px;
+}
