@@ -2,7 +2,7 @@
 
 Signup Redux is a registration flow built in React and Redux. New accounts are submitted to an Express server and persisted to a MongoDB database.
 
-To install and run locally, first ensure you have MongoDb installed and running.
+To install and run locally, first ensure you have MongoDB installed and running.
 
 From there, run `npm install && npm start` in both the root directory and `client` directories.
 
