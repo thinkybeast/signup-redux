@@ -1,18 +1,15 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { BrowserRouter as Router } from "react-router-dom";
-import { Provider } from "react-redux";
-import App from "./components/App";
-import { createStore } from "./lib/store.js";
-import "bootstrap/dist/css/bootstrap.min.css";
+import app from "./server";
+import models, { connectDb } from "./models";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={createStore()}>
-      <Router>
-        <App />
-      </Router>
-    </Provider>
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+const port = process.env.PORT || 3001;
+
+const eraseDatabaseOnSync = true; // Re-initialize DB on startup
+
+connectDb().then(async () => {
+  if (eraseDatabaseOnSync) {
+    await models.Account.deleteMany({});
+  }
+  app.listen(port, () => {
+    console.log(`Listening on port ${port}!`);
+  });
+});

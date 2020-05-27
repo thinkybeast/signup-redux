@@ -8,7 +8,7 @@ import { withRouter } from "react-router-dom";
 
 const mapStateToProps = (state) => {
   return {
-    ...state,
+    fields: state.fields,
   };
 };
 
@@ -37,7 +37,7 @@ class SignupForm extends Component {
   };
 
   componentDidMount() {
-    if (this.props.fields.firstName) {
+    if (this.props.fields.username) {
       this.setState({ ...this.props.fields });
     }
 
@@ -70,9 +70,7 @@ class SignupForm extends Component {
     let formIsValid = true;
 
     for (let field in fields) {
-      console.log(field, fields[field], errors[field]);
       formIsValid = formIsValid && fields[field] !== "" && errors[field] === "";
-      console.log(formIsValid);
     }
 
     return formIsValid;

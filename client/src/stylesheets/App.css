@@ -43,3 +43,7 @@ body.confirmation {
 #signup-form button {
   margin-right: 20px;
 }
+
+#signup-form p {
+  padding: 6px 12px;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import "../stylesheets/App.css";
+// import "../stylesheets/App.css";
 import SignupForm from "./signup/SignupForm";
 import VerifyForm from "./verify/VerifyForm";
 import { Route, Switch } from "react-router-dom";

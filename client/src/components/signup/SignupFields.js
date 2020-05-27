@@ -1,5 +1,5 @@
 import React from "react";
-import ErrorMessage from "./ErrorMessage";
+import ErrorMessage from "../shared/ErrorMessage";
 
 const SignupFields = ({ fields, onChange }) => {
   return (

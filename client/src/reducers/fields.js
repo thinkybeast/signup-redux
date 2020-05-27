@@ -1,5 +1,3 @@
-import { combineReducers } from "redux";
-
 const fields = (state = {}, action) => {
   switch (action.type) {
     case "SAVE_FIELDS":
@@ -9,6 +7,4 @@ const fields = (state = {}, action) => {
   }
 };
 
-export default combineReducers({
-  fields,
-});
+export default fields;

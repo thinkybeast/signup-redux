@@ -2,7 +2,7 @@ import React from "react";
 
 const VerifyFields = ({ fields }) => {
   return (
-    <div>
+    <div id="verifyFields">
       <div className="form-row">
         <div className="form-group col-md-6">
           <label htmlFor="first_name">First Name</label>
